@@ -1,0 +1,21 @@
+.setting{
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.trending{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom:2rem;
+}
+
+.trending_search {display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 4rem
+}
+h1{
+    text-align: center;
+    font-size: 2.5rem;
+}

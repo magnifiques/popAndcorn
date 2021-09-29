@@ -1,0 +1,120 @@
+*{
+  outline: none;
+}
+
+.ContentModalLandscape {
+    object-fit: contain;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding:1rem 0;
+  }
+  
+  .ContentModalPortrait {
+    display: none;
+    object-fit: contain;
+    /* margin: 1rem;
+    display: flex; */
+    
+  }
+  
+  .tagline {
+    font-size: 1.2rem;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    text-align: center; 
+  }
+  
+  .ContentModal {
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+    /* flex-direction: column;
+    justify-content: space-between; */
+    height: 90%;
+    width: 100%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    background: rgb(37, 38, 42);
+    padding: 1rem 0;
+
+  }
+  
+  .ContentModal::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .ContentModalAbout {
+    font-family: "Roboto", sans-serif;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-weight: 300;
+  }
+  
+  .ContentModalTitle {
+    font-family: Montserrat;
+    font-weight: 700;
+    /* font-size: 5vw; */
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .ContentModalDescription {
+    display: flex;
+    overflow-y: scroll;
+    scrollbar-width: thin; /* Firefox */
+    text-align: center;
+    max-height: 30%;
+    font-size: 1.2rem;
+    height: 40%;
+    overflow-y: scroll;
+    justify-content: center;
+    padding: 1rem 0;
+  }
+  
+  .ContentModalDescription::-webkit-scrollbar {
+    display: none;
+  }
+
+  @media (min-width: 835px) {
+    .ContentModalPortrait{
+      display: flex;
+      width: 30%;
+    }
+    .ContentModalLandscape{
+      display: none;
+      /* object-fit: contain; */
+    }
+
+    .ContentModal{
+      flex-direction: row;
+      justify-content: space-around;
+      height: 100%;
+      width: 100%;
+      overflow-y: scroll;
+      scrollbar-width: none;
+      padding: 1rem 0;
+    }
+
+    .ContentModalAbout{
+      width: 58%;
+      padding: 0;
+      height: 100%;
+    }
+
+    .ContentModalTitle{
+      font-size: 3.5vw;
+    }
+
+    .ContentModalDescription{
+      font-size: 1.5rem;
+    }
+  }
+  

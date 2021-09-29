@@ -1,0 +1,14 @@
+.app {
+    min-height: 100vh;
+    padding-top: 8rem;
+    padding-bottom:2rem;
+    background: rgb(23,23,23);
+    background: radial-gradient(circle, rgba(23,23,23,1) 35%, rgba(28,28,28,1) 82%);
+    color: #DDDDDD;
+}
+
+@media only screen and (max-width:425px) {
+    .app{
+    padding-top: 5rem;
+    }
+}

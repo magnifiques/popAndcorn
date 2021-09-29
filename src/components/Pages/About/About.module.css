@@ -1,0 +1,43 @@
+.mainContainer {
+    padding-bottom: 3rem;
+}
+h1{
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.aboutMe{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.introAbout {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    width: 80%;
+}
+img {
+    width:15rem;
+}
+p {
+    text-align:justify;
+}
+@media (min-width: 835px) {
+    .introAbout {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 75%;
+    }
+    img {
+        width: 20rem;
+    }
+    p {
+        font-size: 1.4rem;
+        width: 50%;
+    }
+    .introAbout:nth-child(2) {
+        flex-direction:row-reverse;
+    }
+}
