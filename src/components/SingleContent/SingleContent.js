@@ -17,11 +17,10 @@ const SingleContent = (props) => {
     media_type={props.media_type}
     >
       <div className={classes.stats}>
-        <h1>{props.title}</h1>
+        <h1 className={props.title.length > 17 && classes.bigLength}>{props.title}</h1>
         <h2>{newDate}</h2>
         <p>Ratings: {props.ratings}</p>
       </div>
-      
       <div className={classes.imgHolder}>
         <img
           className={classes.poster}
@@ -29,6 +28,7 @@ const SingleContent = (props) => {
           alt={props.title}
         />
       </div>
+
     </SingleModal>
   );
 };

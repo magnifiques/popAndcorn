@@ -25,8 +25,7 @@ const About = () => {
                 </div>
                 <div className={classes.introAbout}>
                     <img src={pizza} alt="pizza" classname={classes.pizza}/>
-                    <p>About me: Hello! I'm happy that you've seen my project. I'm just a guy who loves web development and tries to make a unique projects.
-                    I hope that you will like my project. Any Feedback will be appreciated. Have A great day!</p>
+                    <p>Hi there! I'm really glad you took the time to see my project. I love web development and enjoy making unique projects. I hope you like what I've created, and I'd appreciate any feedback you have. Have a great day!</p>
                 </div>
                 <div className={classes.introAbout}>
                     <img src={banana} alt="banana" className={classes.banana}/>

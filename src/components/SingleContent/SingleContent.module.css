@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@500&display=swap');
+
 .media {
     position:relative;
     display: flex;
@@ -24,34 +26,35 @@
     transition: all 0.25s ease-in-out;
   }
   .stats {
+    padding-top: 1rem;
     opacity:0;
     width:100%;
     height:100%;
     position: absolute;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-direction: column;
+    text-align: center;
     transform: translateY(50px);
     transition: all 0.25s ease-in-out;
-  }
-  .stats h2, .stats p {
-    margin:0;
   }
   .stats h2, .stats h1, .stats p {
     cursor: pointer;
   }
   .stats h1 {
-    font-size:2.2rem;
+    font-size:2rem;
+    margin: 1rem 0 2.5rem;
     padding-inline: 0.5rem;
   }
   .stats h2 {
-    font-size: 1.5rem;
+    margin:0;
+    font-size: 1.3rem;
     font-weight: 400;
+    padding-bottom: 0.5rem;
   }
   .stats p {
-    margin-top:3rem;
-    font-size: 1.2rem;
+    margin:auto;
+    margin-top:1rem;
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'Saira', sans-serif;
   }
   .media:hover > .stats {
     opacity: 1;
@@ -59,37 +62,39 @@
     background-color: #0e1218bd
   }
 
-  /* @media (max-width: 550px) {
+@media (max-width: 425px) {
     .media {
-      width: 30%;
-      margin:0.5rem
+      width: 40%;
     }
-  }
-  .stats h1 {
-    font-size: 1rem;
-    padding-inline: 0.25rem;
-  }
+
+    .stats h1 {
+    font-size: 1.2rem;
+    }
+
   .stats h2 {
-    font-size:0.8rem;
-    padding-inline:0.25rem;
+    font-size:1rem;
+   
   }
   .stats p {
-    margin-top: 1rem;
-    font-size: 0.5rem;
+    margin-top: 0.2em;
+    font-size: 0.8rem;
   }
-  
-  .title {
-    width: 100%;
+  .stats > .bigLength {
+    padding-inline: 0.8rem;
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 835px) {
+  .stats {
+    display: block;
     text-align: center;
-    font-size: 2rem;
-    padding: 8px 0;
   }
-  
-  .subTitle {
-    display: flex;
-    justify-content: space-between;
-    text-align: 1.5rem;
-    padding-bottom: 1rem;
-    padding: 0 1rem;
-    padding-bottom: 0.5rem;
-  } */
+  .stats h1 {
+    font-size: 1.3rem;
+    padding-inline: 0.5rem;
+  }
+  .stats > .bigLength {
+    padding-inline: 0.8rem;
+    font-size: 1.2rem;
+  }
+}
