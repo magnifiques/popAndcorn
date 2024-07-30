@@ -29,11 +29,11 @@ const About = () => {
                 </div>
                 <div className={classes.introAbout}>
                     <img src={banana} alt="banana" className={classes.banana}/>
-                    <p>My Github Link: <a href={myself.gitlink}>@{myself.username}</a><br/>
+                    <p>My Github Link: <a href={myself.gitlink} target="__blank">@{myself.username}</a><br/>
                         <br />
                         Very Special thanks to my homie {jeet.username} for helping me out in CSS and Designing.<br />
                         <br />
-                        His Github link: <a href={jeet.gitlink}>@{jeet.username}</a></p>
+                        His Github link: <a href={jeet.gitlink} target="__blank">@{jeet.username}</a></p>
                 </div>
         </div>
     </div>
